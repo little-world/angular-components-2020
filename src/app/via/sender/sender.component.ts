@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MessageService} from '../message.service';
+import {Message} from '../../message';
 
 @Component({
   selector: 'app-sender',
@@ -14,7 +15,7 @@ export class SenderComponent implements OnInit {
   }
 
   send(): void {
-    this.messageService.send('hello, world');
+    this.messageService.send(new Message(('hello, aa')));
 
   }
 }
