@@ -11,6 +11,8 @@ import { AComponent } from './routing/a/a.component';
 import { BComponent } from './routing/b/b.component';
 import { SenderComponent } from './via/sender/sender.component';
 import { ReceiverComponent } from './via/receiver/receiver.component';
+import {DetailComponent} from './routes/detail/detail.component';
+import {ContainerComponent} from './routes/container/container.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ReceiverComponent } from './via/receiver/receiver.component';
     ChildComponent,
     AComponent,
     BComponent,
+    ContainerComponent,
+    DetailComponent,
     SenderComponent,
     ReceiverComponent
   ],

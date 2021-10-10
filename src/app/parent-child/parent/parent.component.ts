@@ -6,16 +6,16 @@ import {ChildComponent} from '../child/child.component';
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
-export class ParentComponent implements AfterViewInit {
+export class ParentComponent  {
 
   @ViewChild(ChildComponent)
   child: ChildComponent;
 
   constructor() { }
 
-  ngAfterViewInit(): void {
 
+
+  tochild(): void  {
     this.child.message = 'a message from the parent';
   }
-
 }

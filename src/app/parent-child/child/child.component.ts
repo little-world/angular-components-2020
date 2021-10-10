@@ -8,7 +8,7 @@ import {ParentComponent} from '../parent/parent.component';
 })
 export class ChildComponent implements OnInit {
 
- message: string;
+ message = '';
 
   constructor() { }
 
